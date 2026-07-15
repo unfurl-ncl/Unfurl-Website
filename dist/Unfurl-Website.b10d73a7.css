@@ -94,14 +94,15 @@ div .header-flex {
   max-inline-size: 1500px;
   margin: 8px;
   margin-inline: auto;
-  padding: 50px;
+  padding-block: 0;
+  padding-inline: 50px;
 }
 
 section {
   color: #1c211c;
   background-color: #debdbb;
   border: 5px solid #1c211c;
-  margin-block: 100px;
+  margin-block: 50px;
   padding: 20px;
 }
 
@@ -152,7 +153,8 @@ section {
 }
 
 .pink-highlight strong {
-  background-color: #ef7a71;
+  background: #ef7a71;
+  position: relative;
 }
 
 .span-all {
@@ -173,19 +175,10 @@ section {
 
 .book-flex {
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   block-size: 100%;
-  inline-size: 100%;
   display: flex;
-}
-
-.location-grid {
-  grid-template-rows: 1fr 2fr;
-  align-items: start;
-  gap: 20px;
-  block-size: 100%;
-  display: grid;
 }
 
 .address {
@@ -306,5 +299,28 @@ textarea {
   box-sizing: content-box;
   resize: block;
   height: 5lh;
+}
+
+footer .two-column-grid, .logo-cursive-footer {
+  background-image: url("Logo-Mossy-Background.4d657882.png");
+  background-position: 50% 45%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center end;
+  gap: 20px;
+  padding-inline: 50px;
+}
+
+.grid-justify-start {
+  justify-self: start;
+}
+
+.logo-cursive-footer img {
+  object-fit: contain;
+  border: none;
+  block-size: 20dvh;
+  inline-size: 100%;
 }
 /*# sourceMappingURL=Unfurl-Website.b10d73a7.css.map */

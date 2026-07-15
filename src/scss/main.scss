@@ -65,8 +65,6 @@ div .header-flex {
 }
 
 .primary-navigation {
-    // border: dotted 5px #e7f6e4;
-    // margin: auto;
     block-size: 100%;
     display: flex;
     flex-direction: row;
@@ -100,11 +98,12 @@ div .header-flex {
     max-inline-size: 1500px;
     margin: 8px;
     margin-inline: auto;
-    padding: 50px;
+    padding-inline: 50px;
+    padding-block: 0;
 }
 
 section {
-    margin-block: 100px;
+    margin-block: 50px;
     background-color:#DEBDBB;
     color: #1C211C;
     padding: 20px;
@@ -157,11 +156,18 @@ section {
     border: solid #1C211C 5px;
 }
 
+// .pink-highlight {
+//     // background-color: #EF7A71;
+//     // font-weight: bold;
+//     // border: 0;
+//     // padding-inline: .5ch;
+//     /* color:#e7f6e4; */
+//     /* TO DO I'd like this to  look more like a highlight but am not sure how yet as padding changes the spacing */
+// }
+
 .pink-highlight strong {
-    // background-color: #F54EC2;
-    background-color: #EF7A71;
-    /* color:#e7f6e4; */
-    /* TO DO I'd like this to  look more like a highlight but am not sure how yet as padding changes the spacing */
+    position: relative;
+    background: #EF7A71;
 }
 
 // BOOK SECTION
@@ -183,24 +189,23 @@ section {
 .book-flex {
     display: flex;
     block-size: 100%;
-    inline-size: 100%;
+    // inline-size: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
-.location-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-rows: 1fr 2fr;
-    block-size: 100%;
-    align-items: start;
-}
+// .location-grid {
+//     display: grid;
+//     gap: 20px;
+//     grid-template-rows: 1fr 1fr;
+//     block-size: 100%;
+//     align-items: start;
+// }
 
 
 .address {
     list-style: none;
-    // align-content: end;
 }
 
 .address li::marker {
@@ -314,4 +319,32 @@ textarea {
     box-sizing:content-box;
     height: 5lh;
     resize: block;
+}
+
+// FOOTER
+
+footer .two-column-grid, .logo-cursive-footer {
+    justify-items: end;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 50px;
+    background-image: url(../../assets/logo/Logo-Mossy-Background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 45%;
+    background-size: auto;
+}
+
+.grid-justify-start {
+    justify-self:start;
+}
+
+.logo-cursive-footer img {
+    object-fit: contain;
+    border: none;
+    inline-size: 100%;
+    block-size:20dvh;
+    // filter: brightness(0) saturate(100%) invert(98%) sepia(19%) saturate(359%) hue-rotate(44deg) brightness(99%) contrast(95%);
 }
