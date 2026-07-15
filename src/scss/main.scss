@@ -137,11 +137,19 @@ section {
 
 .two-column-grid {
     display: grid;
-    @media (width >600px) {
+    @media (width >1000px) {
         grid-template-columns: repeat(2, 1fr);
     }
     gap: 20px;
-    place-items: start;
+    align-items: start;
+    justify-items: center;
+}
+
+
+.about-three {
+    @media (width >1000px) {
+        order: 4;
+    }
 }
 
 .two-column-grid img {
@@ -161,16 +169,6 @@ section {
     grid-column: 1/ -1;
 }
 
-.book-grid {
-    display: grid;
-    justify-items: start;
-    align-items: center;;
-    gap: 20px;
-    @media (width >1000px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .three-column-grid {
     display: grid;
     place-items: start;
@@ -181,27 +179,28 @@ section {
     }
 }
 
+
 .book-flex {
     display: flex;
     block-size: 100%;
     inline-size: 100%;
     flex-direction: column;
-    justify-content: start;
-    gap: 50px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.location-flex {
-    display: flex;
+.location-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 2fr;
     block-size: 100%;
-    inline-size: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
+    align-items: start;
 }
+
 
 .address {
     list-style: none;
-    align-content: end;
+    // align-content: end;
 }
 
 .address li::marker {
@@ -217,6 +216,7 @@ iframe {
     border:solid 3px #1C211C;
     inline-size:100%;
     block-size: 100%;
+    accent-color: white;
 }
 
 .contact {
@@ -315,4 +315,3 @@ textarea {
     height: 5lh;
     resize: block;
 }
-
