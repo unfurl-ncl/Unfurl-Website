@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #002810;
     font-family: 'Cascadia Code', 'Consolas', 'Courier New', Courier, monospace;
@@ -14,9 +15,15 @@ body {
     // padding: 50px;
 }
 
-h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
+h2 {
+    text-transform:uppercase;
     font-size: 2.5rem;
+    line-height: 1.1;
+    margin-block: 10px;
+}
+
+h3, h4, h5, h6 {
+    font-size: 2.2rem;
     line-height: 1.1;
     margin-block: 10px;
 }
@@ -71,6 +78,9 @@ div .header-flex {
     justify-content: space-around;
     align-items: center;
     background-clip: content-box;
+    @media (width < 600px) {
+        font-size: 2rem;
+    }
 }
 
 .primary-navigation ul {
@@ -133,6 +143,21 @@ section {
     inline-size: 50%;
 }
 
+// MAIN
+
+main a {
+    color: #1C211C;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+main a:hover, a:focus-visible {
+    // color:#1C211C;
+    text-transform:none;
+    text-decoration: none;
+    // background-color: #e7f6e4;
+}
 
 .two-column-grid {
     display: grid;
@@ -327,7 +352,8 @@ footer .two-column-grid, .logo-cursive-footer {
     justify-items: end;
     align-items: center;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    padding-block: 20px;
     padding-inline: 50px;
     background-image: url(../../assets/logo/Logo-Mossy-Background.png);
     background-attachment: fixed;
@@ -337,14 +363,75 @@ footer .two-column-grid, .logo-cursive-footer {
     background-size: auto;
 }
 
-.grid-justify-start {
-    justify-self:start;
+.circle-bg {
+    block-size: 20dvh;
+    inline-size: 20dvh;
+    background-color: #002810;
+    border-radius: 50%;
 }
+
 
 .logo-cursive-footer img {
     object-fit: contain;
     border: none;
-    inline-size: 100%;
     block-size:20dvh;
     // filter: brightness(0) saturate(100%) invert(98%) sepia(19%) saturate(359%) hue-rotate(44deg) brightness(99%) contrast(95%);
+}
+
+.two-column-grid-icons {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap: 20px;
+    // justify-items: end;
+    // padding: 20px;
+    // background-color: #002810;
+}
+
+.two-column-grid-icons img {
+    block-size: 1lh;
+    margin-inline-end: 0;
+    background-color: none;
+    border-radius: 0;
+}
+
+.grid-justify-start {
+    justify-self:start;
+}
+
+footer .book-flex {
+    background-color: #002810;
+    padding: 20px;
+    gap: 0px;
+    justify-content: space-evenly;
+    text-align: end;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #e7f6e4;
+    // font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+footer a:hover, a:focus-visible {
+    // color:#1C211C;
+    text-transform:none;
+    text-decoration: none;
+    // background-color: #e7f6e4;
+}
+
+// Privacy Policy
+
+header.privacy-policy-header {
+    background-color: #e7f6e4;
+    max-inline-size: 100%;
+    margin: 0;
+    block-size: auto;
+    min-block-size: auto;
+    text-align: start;
+}
+
+section.callout {
+    background-color: #e7f6e4;
 }

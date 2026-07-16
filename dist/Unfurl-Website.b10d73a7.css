@@ -13,10 +13,16 @@ body {
   line-height: 1.6;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
   text-transform: uppercase;
   margin-block: 10px;
   font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h3, h4, h5, h6 {
+  margin-block: 10px;
+  font-size: 2.2rem;
   line-height: 1.1;
 }
 
@@ -67,6 +73,12 @@ div .header-flex {
   align-items: center;
   block-size: 100%;
   display: flex;
+}
+
+@media (width < 600px) {
+  .primary-navigation {
+    font-size: 2rem;
+  }
 }
 
 .primary-navigation ul {
@@ -124,6 +136,17 @@ section {
   object-fit: contain;
   inline-size: 50%;
   position: relative;
+}
+
+main a {
+  color: #1c211c;
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+
+main a:hover, a:focus-visible {
+  text-transform: none;
+  text-decoration: none;
 }
 
 .two-column-grid {
@@ -307,20 +330,72 @@ footer .two-column-grid, .logo-cursive-footer {
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   place-items: center end;
   gap: 20px;
+  padding-block: 20px;
   padding-inline: 50px;
 }
 
-.grid-justify-start {
-  justify-self: start;
+.circle-bg {
+  background-color: #002810;
+  border-radius: 50%;
+  block-size: 20dvh;
+  inline-size: 20dvh;
 }
 
 .logo-cursive-footer img {
   object-fit: contain;
   border: none;
   block-size: 20dvh;
-  inline-size: 100%;
+}
+
+.two-column-grid-icons {
+  grid-template-columns: 4fr 1fr 1fr;
+  gap: 20px;
+  display: grid;
+}
+
+.two-column-grid-icons img {
+  background-color: none;
+  border-radius: 0;
+  block-size: 1lh;
+  margin-inline-end: 0;
+}
+
+.grid-justify-start {
+  justify-self: start;
+}
+
+footer .book-flex {
+  text-align: end;
+  background-color: #002810;
+  justify-content: space-evenly;
+  gap: 0;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #e7f6e4;
+  text-decoration: underline 2px;
+}
+
+footer a:hover, a:focus-visible {
+  text-transform: none;
+  text-decoration: none;
+}
+
+header.privacy-policy-header {
+  text-align: start;
+  background-color: #e7f6e4;
+  block-size: auto;
+  min-block-size: auto;
+  max-inline-size: 100%;
+  margin: 0;
+}
+
+section.callout {
+  background-color: #e7f6e4;
 }
 /*# sourceMappingURL=Unfurl-Website.b10d73a7.css.map */
