@@ -12,7 +12,6 @@ body {
     font-size: 1.25rem;
     line-height: 1.6;
     margin: 0;
-    // padding: 50px;
 }
 
 h2 {
@@ -137,7 +136,6 @@ section {
 
 .logo-cursive img {
     /* TO DO I think this should be set to a more relative unit, not pixels although whatever I'll use I need to apply it to the .mossy-logo mask size too*/
-    // display: inline-block;
     object-fit: contain;
     position: relative;
     inline-size: 50%;
@@ -153,10 +151,8 @@ main a {
 }
 
 main a:hover, a:focus-visible {
-    // color:#1C211C;
     text-transform:none;
     text-decoration: none;
-    // background-color: #e7f6e4;
 }
 
 .two-column-grid {
@@ -180,15 +176,6 @@ main a:hover, a:focus-visible {
     width: 95%;
     border: solid #1C211C 5px;
 }
-
-// .pink-highlight {
-//     // background-color: #EF7A71;
-//     // font-weight: bold;
-//     // border: 0;
-//     // padding-inline: .5ch;
-//     /* color:#e7f6e4; */
-//     /* TO DO I'd like this to  look more like a highlight but am not sure how yet as padding changes the spacing */
-// }
 
 .pink-highlight strong {
     position: relative;
@@ -220,15 +207,6 @@ main a:hover, a:focus-visible {
     gap: 20px;
 }
 
-// .location-grid {
-//     display: grid;
-//     gap: 20px;
-//     grid-template-rows: 1fr 1fr;
-//     block-size: 100%;
-//     align-items: start;
-// }
-
-
 .address {
     list-style: none;
 }
@@ -258,7 +236,6 @@ iframe {
 
 form {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     @media (width >700px) {
         grid-template-columns: repeat(2, 1fr);
@@ -300,7 +277,6 @@ button {
     font: inherit;
     background-color: #1C211C;
     color:#e7f6e4;
-    // background:#EF7A71;
     border: 0;
 }
 
@@ -375,16 +351,12 @@ footer .two-column-grid, .logo-cursive-footer {
     object-fit: contain;
     border: none;
     block-size:20dvh;
-    // filter: brightness(0) saturate(100%) invert(98%) sepia(19%) saturate(359%) hue-rotate(44deg) brightness(99%) contrast(95%);
 }
 
 .two-column-grid-icons {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     gap: 20px;
-    // justify-items: end;
-    // padding: 20px;
-    // background-color: #002810;
 }
 
 .two-column-grid-icons img {
@@ -409,7 +381,6 @@ footer .book-flex {
 
 footer a {
     color: #e7f6e4;
-    // font-weight: bold;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
@@ -418,7 +389,6 @@ footer a:hover, a:focus-visible {
     // color:#1C211C;
     text-transform:none;
     text-decoration: none;
-    // background-color: #e7f6e4;
 }
 
 // Privacy Policy
