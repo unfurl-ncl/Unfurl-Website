@@ -58,7 +58,7 @@ header {
        h1 {
         font-size: 4.5rem;
        }
-        li {font-size: 2rem;
+        li {font-size: 1.8rem;
        }
     }
 }
@@ -124,6 +124,9 @@ section {
     color: #1C211C;
     padding: 20px;
     border: solid 5px #1C211C;
+    @media (width < 700px) {
+        padding: 10px;
+    }
 }
 
 .mossy-logo {
@@ -406,7 +409,7 @@ footer a:hover, a:focus-visible {
 // Privacy Policy
 
 header.privacy-policy-header {
-    background-color: #e7f6e4;
+    // background-color: #e7f6e4;
     max-inline-size: 100%;
     margin: 0;
     block-size: auto;
