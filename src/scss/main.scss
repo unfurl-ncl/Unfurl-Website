@@ -136,6 +136,9 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    @supports (-webkit-touch-callout:none) {
+            background-attachment: scroll;
+        }
     mask-image: url('../../assets/logo/Circle-Vector.svg');
     mask-repeat: no-repeat;
     mask-position: center;
@@ -143,6 +146,16 @@ section {
     justify-content: center;
     align-content: center;
 }
+
+// .mossy-logo:after{
+//     content:"";
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     height: 100dvh;
+//     z-index:
+// }
 
 .logo-cursive img {
     /* TO DO I think this should be set to a more relative unit, not pixels although whatever I'll use I need to apply it to the .mossy-logo mask size too*/
