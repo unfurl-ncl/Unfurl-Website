@@ -136,9 +136,6 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    @supports (-webkit-touch-callout:none) {
-            background-attachment: scroll;
-        }
     mask-image: url('../../assets/logo/Circle-Vector.svg');
     mask-repeat: no-repeat;
     mask-position: center;
@@ -147,15 +144,17 @@ section {
     align-content: center;
 }
 
-// .mossy-logo:after{
-//     content:"";
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     height: 100dvh;
-//     z-index:
-// }
+.mossy-logo:after{
+    content:"";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100dvh;
+    z-index: -1;
+    background: url(../../assets/logo/Logo-Mossy-Background.png);
+    background-size: cover;
+}
 
 .logo-cursive img {
     /* TO DO I think this should be set to a more relative unit, not pixels although whatever I'll use I need to apply it to the .mossy-logo mask size too*/
@@ -362,6 +361,18 @@ footer .two-column-grid, .logo-cursive-footer {
     background-position-x: center;
     background-position-y: 45%;
     background-size: auto;
+}
+
+.logo-cursive-footer:after{
+    content:"";
+    position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    height: 100dvh;
+    z-index: -1;
+    background: url(../../assets/logo/Logo-Mossy-Background.png);
+    background-size: cover;
 }
 
 .circle-bg {
