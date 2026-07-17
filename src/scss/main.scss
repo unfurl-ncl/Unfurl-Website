@@ -154,7 +154,7 @@ section {
     background-position: center;
     background-size: auto;
     @media (width <600px) {
-        @supports (::selection) {
+        @supports (hanging-punctuation: initial) {
             background-attachment: scroll;
         }
     }
